@@ -1,7 +1,7 @@
 # iCall
-Swift based iOS Call/SMS App
+- Swift based iOS Call/SMS App
 
 #Backend
-Django models for user management and database
-Tatypie for Rest APIs
-Flask for twilio based API calls
+- Django models for user management and database
+- Tatypie for Rest APIs
+- Flask for twilio based API calls
