@@ -1,0 +1,35 @@
+Chetans-MacBook-Pro-2:djhub cgiridhar$ curl --dump-header - -H "Content-Type: application/json" -X POST --data '{"username":"deepti", "email":"deepti@gmail.com","password":"ad2w", "first_name":"D", "last_name":"Giridhar"}' http://localhost:8000/api/v1/users/
+HTTP/1.0 201 CREATED
+Date: Sun, 17 May 2015 09:20:16 GMT
+Server: WSGIServer/0.1 Python/2.7.5
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Type: application/json
+Location: http://localhost:8000/api/v1/users/3/
+
+
+Chetans-MacBook-Pro-2:djhub cgiridhar$ curl --dump-header - -H "Content-Type: application/json"  -X POST --data '{"phone_number":"23423432", "title":"ENG", "company":"BJN", "email":"cjgiridhar@gmail.com","user":{"username":"deepti"}}' http://localhost:8000/api/v1/user_profile/
+HTTP/1.0 201 CREATED
+Date: Sun, 17 May 2015 09:23:37 GMT
+Server: WSGIServer/0.1 Python/2.7.5
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Type: application/json
+Location: http://localhost:8000/api/v1/user_profile/1/
+
+{"company": "BJN", "email": "cjgiridhar@gmail.com", "id": 1, "is_verified": false, "phone_number": "23423432", "status": "UNKNOWN", "title": "ENG", "user": {"date_joined": "2015-05-17T09:20:16.351120", "email": "deepti@gmail.com", "first_name": "D", "id": 3, "is_active": true, "is_staff": false, "is_superuser": false, "last_login": "2015-05-17T09:20:16.351085", "last_name": "Giridhar", "password": "ad2w", "username": "deepti"}}Chetans-MacBook-Pro-2:djhub cgiridhar$ 
+Chetans-MacBook-Pro-2:djhub cgiridhar$ 
+Chetans-MacBook-Pro-2:djhub cgiridhar$ 
+
+
+Chetans-MacBook-Pro-2:djhub cgiridhar$ curl --dump-header - -H "Content-Type: application/json"  http://localhost:8000/api/v1/user_profile/
+HTTP/1.0 200 OK
+Date: Sun, 17 May 2015 09:23:47 GMT
+Server: WSGIServer/0.1 Python/2.7.5
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"profile": [{"company": "BJN", "id": 1, "is_verified": false, "phone_number": "23423432", "status": "UNKNOWN", "title": "ENG", "user": {"date_joined": "2015-05-17T09:20:16.351120", "email": "deepti@gmail.com", "first_name": "D", "id": 3, "is_active": true, "is_staff": false, "is_superuser": false, "last_login": "2015-05-17T09:20:16.351085", "last_name": "Giridhar", "password": "ad2w", "username": "deepti"}}]}Chetans-MacBook-Pro-2:djhub cgiridhar$ 
+
