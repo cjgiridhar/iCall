@@ -51,6 +51,13 @@ class ViewController: UIViewController {
     }
     
 
+    @IBAction func callCell4() {
+        var number = numberLabel.text
+        //println("In Call")
+        httpObj.post(["number": "+919008058721"],
+            url: "http://127.0.0.1:5000/callout")
+    }
+    
     @IBAction func broadCastAction() {
         httpObj.post(["number": "+919886509613"],
             url: "http://127.0.0.1:5000/callout")

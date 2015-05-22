@@ -7,12 +7,9 @@ import json
 app = Flask(__name__)
 
 
-#account_sid = "AC9deb9d2bab249c5889e468dba126b9dd"
-#auth_token = "810f5eb6e8b219e96c80bc6d0c94dc44"
-#from_="+14434062749", # Must be a valid Twilio number
 
-account_sid = "AC0e6675808b1d2aefc45b0b4d1df066c8"
-auth_token = "2d84d7b7d22ff9d91779901dbadda7ad"
+account_sid = "we3143ew"
+auth_token = "we21234asdasd"
 client = TwilioRestClient(account_sid, auth_token)
 
 @app.route("/", methods=['GET', 'POST'])
