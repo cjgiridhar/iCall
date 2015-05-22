@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 
-
+#Put in Twilio API account
 account_sid = "we3143ew"
 auth_token = "we21234asdasd"
 client = TwilioRestClient(account_sid, auth_token)
