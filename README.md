@@ -3,5 +3,5 @@
 
 #Backend
 - Django models for user management and database
-- Tatypie for Rest APIs
+- Tastypie for Rest APIs
 - Flask for twilio based API calls
